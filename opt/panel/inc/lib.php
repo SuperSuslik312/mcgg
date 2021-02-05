@@ -506,7 +506,7 @@ Y88b. .d88P      X88 Y8b.     888          X88
  "Y88888P"   88888P'  "Y8888  888      88888P'
 */
 // Add a new user
-function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
+function user_add($user,$pass,$role,$home,$version,$ram=512,$port=25565) {
 	// Prevent overwriting an existing user
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 		return false;
@@ -575,7 +575,7 @@ function user_info($user) {
 	}
 }
 // Update user data
-function user_modify($user,$pass,$role,$home,$ram,$port,$jar='craftbukkit.jar',$key,$time) {
+function user_modify($user,$pass,$role,$home,$ram,$port,$key,$time,$jar='craftbukkit.jar') {
 	// check user existence
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 		// Create user array
