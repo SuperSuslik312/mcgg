@@ -547,8 +547,8 @@ log: ".$_POST['dir']."/ngrok.log \n
 		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.14.4.jar');
 	} else if ($_POST['version'] == '1.16.4') {
 		copy('serverbase/spigot-1.16.4.jar',$_POST['dir'].'/spigot-1.16.4.jar');
-	} else if ($_POST['version'] == '1.16.4-p') {
-		copy('serverbase/paper-1.16.4.jar',$_POST['dir'].'/paper-1.16.4.jar');
+	} else if ($_POST['version'] == '1.16.200') {
+		copy('serverbase/nukkit-1.16.200.jar',$_POST['dir'].'/nukkit-1.16.200.jar');
 	} else if ($_POST['version'] == 'BC') {
 		copy('serverbase/BungeeCord.jar',$_POST['dir'].'/BungeeCord.jar');
 	}
